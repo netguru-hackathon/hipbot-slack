@@ -1,6 +1,6 @@
 class SlackAdapter
   def start!
-    # NO-OP
+    Hipbot.configuration.user = Hipbot::User.find_or_create_by(mention: "hipbot")
   end
 
   def restart!
@@ -33,5 +33,14 @@ class HipbotNetguru < Hipbot::Bot
 
   on /open the pod bay door/, global: true do
     reply("I'm afraid I can't do that...")
+  end
+
+  on /hi/ do
+    reply('Hello!')
+  end
+
+  on_exception do |e|
+    Rails.logger.info(e.message)
+    Rails.logger.info(e.backtrace)
   end
 end
