@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: git://github.com/pewniak747/hipbot-plugins.git
-  revision: bb3f52a4ad8b401b8428ec589be02b8fb1d8e8d4
+  revision: 1421a92eb1a845229ea0c8a7bf2c96b45344f965
   branch: master
   specs:
     hipbot-plugins (2.0.0)
