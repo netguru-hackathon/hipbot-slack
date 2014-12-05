@@ -39,6 +39,12 @@ class HipbotNetguru < Hipbot::Bot
     reply('Hello!')
   end
 
+  on /http test/ do
+    get('http://example.com') do |response|
+      reply("code: #{response.code}, body size: #{response.body.size.to_s} characters")
+    end
+  end
+
   on_exception do |e|
     Rails.logger.info(e.message)
     Rails.logger.info(e.backtrace)

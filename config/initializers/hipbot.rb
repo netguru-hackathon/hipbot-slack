@@ -1,2 +1,4 @@
-HipbotNetguru.instance.setup
-HipbotNetguru.instance.start!
+# HACK
+Thread.new do
+  HipbotNetguru.start!
+end
