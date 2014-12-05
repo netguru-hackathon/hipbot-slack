@@ -27,9 +27,11 @@ end
 class HipbotNetguru < Hipbot::Bot
   configure do |c|
     c.adapter = SlackAdapter
+    c.logger = Rails.logger
+    c.storage = Hipbot::Storages::Hash
   end
 
-  on /open the pod bay door/ do
+  on /open the pod bay door/, global: true do
     reply("I'm afraid I can't do that...")
   end
 end
