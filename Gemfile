@@ -23,6 +23,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'httparty'
 gem 'hipbot'
+gem 'cleverbot', github: 'bartoszkopinski/cleverbot', branch: 'master'
+gem 'hipbot-plugins', require: false
 gem 'rails_12factor'
 
 # Use ActiveModel has_secure_password
