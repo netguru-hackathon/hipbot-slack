@@ -25,7 +25,8 @@ gem 'httparty'
 gem 'hipbot'
 gem 'cleverbot', github: 'bartoszkopinski/cleverbot', branch: 'master'
 gem 'dictionary-rb'
-gem 'hipbot-plugins', require: false
+gem 'wolfram'
+gem 'hipbot-plugins', github: 'pewniak747/hipbot-plugins', branch: 'master', require: false
 gem 'rails_12factor'
 
 # Use ActiveModel has_secure_password

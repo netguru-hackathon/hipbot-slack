@@ -7,6 +7,14 @@ GIT
       htmlentities
       httparty (>= 0.8.1, < 1.0)
 
+GIT
+  remote: git://github.com/pewniak747/hipbot-plugins.git
+  revision: 55b9ce0e5a696f651ab592c5c413c7a3a2e9df15
+  branch: master
+  specs:
+    hipbot-plugins (2.0.0)
+      hipbot (~> 1.0, >= 1.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -85,11 +93,6 @@ GEM
       em-http-request (~> 1.1)
       eventmachine (~> 1.0)
       xmpp4r-hipchat (= 0.0.4)
-    hipbot-plugins (1.0.2)
-      cleverbot (~> 0.2.0)
-      hipbot (~> 1.0, >= 1.0.0)
-      htmlentities
-      wolfram (~> 0.2.1)
     htmlentities (4.3.2)
     http_parser.rb (0.6.0)
     httparty (0.13.3)
@@ -200,7 +203,7 @@ DEPENDENCIES
   dictionary-rb
   dotenv-rails
   hipbot
-  hipbot-plugins
+  hipbot-plugins!
   httparty
   jbuilder (~> 2.0)
   jquery-rails
@@ -214,3 +217,4 @@ DEPENDENCIES
   turbolinks
   uglifier (>= 1.3.0)
   web-console (~> 2.0)
+  wolfram
