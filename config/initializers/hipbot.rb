@@ -1,4 +1,4 @@
-require 'hipbot-plugins/human'
+require 'hipbot-plugins'
 
 # HACK
 Thread.new do
