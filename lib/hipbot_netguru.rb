@@ -31,7 +31,7 @@ class HipbotNetguru < Hipbot::Bot
     c.storage = Hipbot::Storages::Hash
   end
 
-  on /open the pod bay door/, global: true do
+  on /open the pod bay door/ do
     reply("I'm afraid I can't do that...")
   end
 
