@@ -45,5 +45,8 @@ group :development, :test do
   gem 'spring'
 
   gem 'dotenv-rails'
+  gem 'pry-rails'
+  gem 'pry-remote'
+
 end
 

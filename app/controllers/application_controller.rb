@@ -1,10 +1,9 @@
 class ApplicationController < ActionController::Base
   def slack
     Rails.logger.info(params)
-    Rails.logger.info(params[:user_name])
-    Rails.logger.info(params[:user_id])
     if params[:user_name] !~ /bot/
-      SlackConnector.message(nil, "Got it, #{params[:text]}")
+      room = Hipbot::Room.find_or_create_by(name: params[:channel_name])
+      HipbotNetguru.instance.send_to_room(room, "Got it, #{params[:text]}")
     end
     render nothing: true
   end
